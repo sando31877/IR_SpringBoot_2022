@@ -1,0 +1,13 @@
+<!--th:fragment="navbarFragment" -->
+    <div th:fragment="headerFragment" class="head-box">
+        <div class="title">
+            <a href="/" class="logo">SpringBoot</a>
+        </div>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="http://sando00.com/">Home</a></li>
+                <li><a sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a></li>
+                <li><a sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a></li>
+            </ul>
+        </div>
+    </div>

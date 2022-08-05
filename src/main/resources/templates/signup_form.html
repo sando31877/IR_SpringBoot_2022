@@ -1,0 +1,15 @@
+<html layout:decorate="~{layout}">
+
+<div layout:fragment="content">
+  <div class="signup-box">
+    <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
+        <div th:replace="form_errors :: formErrorsFragment"></div>
+            <input type="text" th:field="*{username}" placeholder="Id" class="form-control">
+            <input type="password" th:field="*{password1}" placeholder="비밀번호" class="form-control">
+            <input type="password" th:field="*{password2}" placeholder="비밀번호 확인" class="form-control">
+            <input type="email" th:field="*{email}" placeholder="이메일" class="form-control">
+        <button type="submit" class="btn btn-primary">회원가입</button>
+    </form>
+  </div>
+</div>
+</html>

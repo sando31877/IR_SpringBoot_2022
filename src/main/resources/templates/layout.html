@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" th:href="@{/question-detail-style.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/question-list-style.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/question-form-style.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/header.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/singup_form.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/alert1.css}">
+	
+    <title>SpringBoot</title>
+</head>
+<body>
+<!-- 헤더 START-->
+<nav th:replace="header :: headerFragment"></nav>
+<!-- 헤더 END -->
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+<th:block layout:fragment="content"></th:block>
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+<!-- 자바스크립트 Start -->
+<th:block layout:fragment="script"></th:block>
+<!-- 자바스크립트 End -->
+</body>
+</html>

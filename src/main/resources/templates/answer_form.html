@@ -1,0 +1,14 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="question-detail-box">
+    <form th:object="${answerForm}" method="post">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        <div th:replace="form_errors :: formErrorsFragment"></div>
+        <div class="mb-3">
+            <textarea th:field="*{content}" class="form-control" placeholder="답변을 입력해주세요."></textarea>
+        </div>
+        <input type="submit" value="저장하기" class="btn btn-primary my-2">
+    </form>
+</div>
+
+
+</html>

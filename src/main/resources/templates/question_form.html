@@ -1,0 +1,30 @@
+<html layout:decorate="~{layout}">
+  <div layout:fragment="content" class="question-form-box">
+    <div class="question-form-title">
+      <h2>글 작성</h2>
+    </div>
+    <form th:object="${questionForm}" method="post">
+      <input
+        type="hidden"
+        th:name="${_csrf.parameterName}"
+        th:value="${_csrf.token}"
+      />
+      <div th:replace="form_errors :: formErrorsFragment"></div>
+      <input
+        type="text"
+        th:field="*{subject}"
+        name="subject"
+        class="textarea-title"
+        placeholder="제목을 입력해주세요."
+      />
+      <textarea
+        name="content"
+        th:field="*{content}"
+        placeholder="내용을 입력해주세요."
+        class="textarea-content"
+        rows="10"
+      ></textarea>
+      <input type="submit" value="저장하기" />
+    </form>
+  </div>
+</html>

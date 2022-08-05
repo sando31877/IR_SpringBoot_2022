@@ -1,0 +1,208 @@
+.question-detail-box {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+h2 {
+  font-size: 40px;
+  color: #333;
+}
+.question-detail-box .question-detail-title {
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  width: 60%;
+  display: inline-block;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin-top: 13px;
+  margin-left: 20%;
+}
+.question-detail-box .question-detail-content {
+  position: relative;
+  color: #333;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+.question-detail-box .question-detail-number {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  vertical-align: middle;
+  margin-top: 60px;
+  margin-left: 20%;
+  margin-right: 20%;
+  float: right;
+}
+.question-detail-box .question-detail-answer {
+  position: relative;
+  color: #333;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  width: 60%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 30px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgb(244,244,244);
+  padding-bottom: 10px;
+}
+.question-detail-box .question-detail-answer .question-detail-answer-main {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.question-detail-box .question-detail-answer .question-detail-answer-time {
+  float: right;
+  margin-right: 10px;
+  padding-left: 35%;
+}
+
+.question-detail-box textarea {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: calc(60% - 20px);
+  border-radius: 10px;
+  height: 50px;
+  border: none;
+  transition: 0.3s;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  resize: none;
+  margin-top: 20px;
+  font-family: Consolas, sans-serif;
+  background-color: rgb(244,244,244);
+  padding: 10px 10px;
+}
+.question-detail-box textarea:focus {
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+.question-detail-box form {
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+  transition: 0.3s;
+  color: rgb(33, 33, 33);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  float: right;
+  margin-right: 20%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+input[type="submit"]:hover {
+  transition: 0.3s;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+.question-detail-box .info {
+	float: right;
+}
+.question-detail-box .info a{
+	padding: 10px;
+	margin-top: 10px;
+	background-color: rgb(244,244,244);
+	float: right;
+	border-radius: 10px;
+	margin-left: 10px;
+	text-align: center;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.answer-info-area a{
+    padding: 5px 10px 5px 10px;
+	background-color: rgb(244,244,244);
+	float: right;
+	border-radius: 10px;
+	margin-right: 10px;
+	text-align: center;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.question-detail-box .question-area {
+	width: 50%;
+	float: left;
+	margin-left: 20%;
+}
+.question-detail-box .info-area {
+	width: 10%;
+	float: right;
+	margin-right: 20%;
+}
+.question-detail-answer .answer-area {
+	width: 70%;
+	float: left;
+}
+.question-detail-answer .answer-info-area {
+	width: 30%;
+	float: right;
+}
+.question-detail-answer .answer-info-area .button-set{
+	width: 100%;
+}
+@media (max-width: 991px)
+{
+.question-detail-box .question-detail-number {
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+.question-detail-box textarea {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: calc(90% - 20px);
+}
+.question-detail-box h2 {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 30px;
+}
+.question-detail-box .question-detail-title {
+  width: 90%;
+  margin-left: 5%;
+}
+.question-detail-box .question-detail-answer {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+.question-detail-answer .answer-info-area {
+	width: 40%;
+	float: right;
+}
+.question-detail-box .question-detail-answer .question-detail-answer-time {
+  float: right;
+  margin-right: 10px;
+  padding-left: 0;
+}
+.question-detail-box .question-area {
+	width: 95%;
+	margin-left: 5%;
+	display: inline-block
+}
+.question-detail-box .question-area p{
+	margin: 0;
+}
+.question-detail-box .info-area {
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%
+}
+.question-detail-box .info-area a{
+	width: 60px;
+	padding: 5px;
+}
+}
